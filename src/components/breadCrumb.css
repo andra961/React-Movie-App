@@ -1,0 +1,32 @@
+.wrapperBread {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background: var(--medGrey);
+    color: var(--white);
+
+}
+
+.contentBread {
+
+    display: flex;
+    width: 100%;
+    max-width: var(--maxWidth);
+    padding: 0  20px;
+}
+
+.contentBread span {
+    font-size: var(--fontMed);
+    color: var(--white);
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .contentBread span {
+        font-size: var(--fontSmall);
+    }
+
+}

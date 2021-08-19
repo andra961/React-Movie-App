@@ -1,0 +1,23 @@
+
+.wrapperGrid {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wrapperGrid h1 {
+    color: var(--medGrey);
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .wrapperGrid h1 {
+        font-size: var(--fontBig);
+    }
+}

@@ -1,0 +1,56 @@
+
+.wrapperHero {
+    height: 600px;
+    animation: animateHeroImage 1s;
+    position: relative;
+}
+
+.contentHero {
+    padding: 20px;
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+}
+
+.text h1 {
+    font-size: var(--fontSuperBig);
+}
+
+.text p {
+    font-size: var(--fontMed);
+}
+
+.text {
+    z-index: 100;
+    max-width: 700px;
+    position: absolute;
+    bottom: 40px;
+    margin-right: 20px;
+    min-height: 100px;
+    color: var(--white);
+}
+
+@media screen and (max-width:720px){
+    .wrapperHero {
+        
+    }
+
+    .text h1 {
+        font-size: var(--fontBig);
+    }
+
+    .text p {
+        font-size: var(--fontSmall);
+    }
+
+}
+
+@keyframes animateHeroImage{
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+    
+}
